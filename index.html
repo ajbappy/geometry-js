@@ -4,9 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>geometry calculation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <header
+      class="w-[90%] mx-auto flex justify-between items-center bg-blue-100 px-6 py-3"
+    >
+      <div>
+        <h1 class="text-4xl font-bold">
+          Interactive <br />
+          <span class="text-3xl font-normal text-gray-600"
+            >Geometry Genius</span
+          >
+        </h1>
+      </div>
+      <div>
+        <button class="btn-primary btn-sm">Blog</button>
+      </div>
+    </header>
+    <main class="w-[90%] mx-auto flex justify-between mt-10">
+      <!-- left all element part  -->
+      <div>
+        <!--Triangle -->
+
+        <div class="card w-96 bg-base-100 border">
+          <figure class="px-10 pt-10">
+            <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Triangle</h2>
+            <p>Area (A) = 0.5 x b x h</p>
+            <div class="input-field">
+              <input
+                type="text"
+                class="w-2/6 inline-block bg-gray-200 mt-5 mb-7 mx-2 placeholder:p-2"
+                id="first-input"
+                placeholder="b"
+              /><span>cm</span>
+              <input
+                type="text"
+                class="w-2/6 inline-block bg-gray-200 mt-5 mb-7 mx-2 placeholder:p-2"
+                id="first-input"
+                placeholder="h"
+              /><span>cm</span>
+            </div>
+            <div class="area mb-5">
+              <h2>Area : <span>0</span> cm<sup>2</sup></h2>
+            </div>
+            <div class="card-actions w-full">
+              <button class="w-full btn-primary py-3">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- calulation part  -->
+      <div class="">
+        <h1 class="text-center">Area Calculation</h1>
+      </div>
+    </main>
     <script src="script.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>
